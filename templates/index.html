@@ -44,11 +44,11 @@
             <li class="nav-item">
                <a class="nav-link" data-scroll-nav="2" href="#">screenshots</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                <a class="nav-link" data-scroll-nav="4" href="#">testimonials</a>
-            </li>
+            </li> -->
             <li class="nav-item">
-               <a class="nav-link" data-scroll-nav="6" href="#">contact</a>
+               <a class="nav-link" data-scroll-nav="6" href="#">join us</a>
             </li>
           </ul>
        </div>
@@ -81,7 +81,7 @@
               <div class="home-img">
                  <div class="circle">
                  </div>
-                 <img src="{{ url_for('static', filename='img/app-screenshots/app.png') }}" alt="shala app">
+                 <img src="{{ url_for('static', filename='img/app-screenshots/app_1.png') }}" alt="Kubedash">
               </div>
            </div>
         </div>
@@ -109,12 +109,12 @@
               <div class="feature-item">
                  <div class="icon"><i class="fas fa-laptop-code"></i></div>
                  <h3>User-Friendly Interface</h3>
-                 <p>Designed with a user-centric approach, ensuring an intuitive and easy-to-navigate interface.</p>
+                 <p>User-focused design, intuitive interface for effortless navigation.</p>
               </div>
               <div class="feature-item">
                  <div class="icon"><i class="fas fa-laptop-house"></i></div>
                  <h3>Powerful Features</h3>
-                 <p>Offers a robust set of features to simplify your K8s cluster management.</p>
+                 <p>Streamlines K8s cluster management with powerful tools.</p>
               </div>
               <div class="feature-item">
                  <div class="icon"><i class="fas fa-code-branch"></i></div>
@@ -133,7 +133,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-5 d-flex align-items-center justify-content-center">
                <div class="fun-facts-img">
-                  <img src="img/app-screenshots/2.png" alt="fun facts">
+                  <img src="{{ url_for('static', filename='img/app-screenshots/app.png')}}" alt="fun facts">
                </div>
             </div>
             <div class="col-lg-6 col-md-7">
@@ -145,25 +145,25 @@
                   <div class="row">
                      <div class="col-sm-6">
                         <div class="fun-fact-item style-1">
-                           <h3>4000</h3>
+                           <h3>0</h3>
                            <span>downloads</span>
                         </div>
                      </div>
                      <div class="col-sm-6">
                         <div class="fun-fact-item style-2">
-                           <h3>200</h3>
+                           <h3>0</h3>
                            <span>likes</span>
                         </div>
                      </div>
                      <div class="col-sm-6">
                         <div class="fun-fact-item style-3">
-                           <h3>500</h3>
+                           <h3>0</h3>
                            <span>5 start rating</span>
                         </div>
                      </div>
                      <div class="col-sm-6">
                         <div class="fun-fact-item style-4">
-                           <h3>150</h3>
+                           <h3>0</h3>
                            <span>awards</span>
                         </div>
                      </div>
@@ -188,9 +188,6 @@
         <div class="row">
             <div class="owl-carousel screenshots-carousel">
                <div class="screenshot-item">
-                  <img src="{{ url_for('static', filename='img/app-screenshots/app1.png') }}" alt="screenshot">
-               </div>
-               <div class="screenshot-item">
                   <img src="{{ url_for('static', filename='img/app-screenshots/app_2.png') }}" alt="screenshot">
                </div>
                <div class="screenshot-item">
@@ -201,6 +198,21 @@
                </div>
                <div class="screenshot-item">
                   <img src="{{ url_for('static', filename='img/app-screenshots/app_5.png') }}" alt="screenshot">
+               </div>
+               <div class="screenshot-item">
+                  <img src="{{ url_for('static', filename='img/app-screenshots/app_6.png') }}" alt="screenshot">
+               </div>
+               <div class="screenshot-item">
+                  <img src="{{ url_for('static', filename='img/app-screenshots/app_7.png') }}" alt="screenshot">
+               </div>
+               <div class="screenshot-item">
+                  <img src="{{ url_for('static', filename='img/app-screenshots/app_8.png') }}" alt="screenshot">
+               </div>
+               <div class="screenshot-item">
+                  <img src="{{ url_for('static', filename='img/app-screenshots/app_9.png') }}" alt="screenshot">
+               </div>
+               <div class="screenshot-item">
+                  <img src="{{ url_for('static', filename='img/app-screenshots/app_10.png') }}" alt="screenshot">
                </div>
             </div>
         </div>
@@ -224,23 +236,23 @@
                   <i class="fab fa-google-play"></i>
                   <h3>google play</h3>
                   <p>Explore the Google Play Store and discover the power of KubeDash</p>
-                  <a href="#" class="btn btn-2">download now</a>
+                  <a href="#" data-scroll-nav="6"  class="btn btn-2">Join Beta Users</a>
                </div>
             </div>
             <div class="col-lg-4 col-md-6">
                <div class="app-download-item">
                   <i class="fab fa-apple"></i>
                   <h3>apple store</h3>
-                  <p>Get ready to harness the power of K8s on your iOS device with KubeDash. Stay tuned for the upcoming release!</p>
-                  <a href="#" class="btn btn-2">Available soon</a>
+                  <p>Explore the Apple Store and discover the power of KubeDash</p>
+                  <a href="#" data-scroll-nav="6"  class="btn btn-2">Join Beta Users</a>
                </div>
             </div>
             <div class="col-lg-4 col-md-6">
                <div class="app-download-item">
                   <i class="fab fa-windows"></i>
                   <h3>microsoft store</h3>
-                  <p>Exciting news for Windows users! KubeDash will soon be available on the Windows Store,</p>
-                  <a href="#" class="btn btn-2">Available soon</a>
+                  <p>Explore the microsoft Store and discover the power of KubeDash</p>
+                  <a href="#" data-scroll-nav="6"  class="btn btn-2">Join Beta Users</a>
                </div>
             </div>
         </div>
@@ -293,7 +305,7 @@
   <!-- How It Works Section End -->
 
   <!-- Testimonials Section Start -->
-  <section class="testimonials section-padding" id="testimonials" data-scroll-index="4">
+  <!-- <section class="testimonials section-padding" id="testimonials" data-scroll-index="4">
      <div class="container">
          <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -371,7 +383,7 @@
             </div>
          </div>
      </div>
-  </section>
+  </section> -->
   <!-- Testimonials Section End -->
 
   <!-- Faq Section Start -->
@@ -389,41 +401,41 @@
               <div id="accordion">
                   <div class="accordion-item">
                       <div class="accordion-header" data-toggle="collapse" data-target="#collapse-01">
-                         <h3>100% Fluid Responsive - Fits any device perfectly</h3>
+                         <h3>What is KubeDash?</h3>
                       </div>
                       <div class="collapse show" id="collapse-01" data-parent="#accordion">
                          <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <p>KubeDash is a mobile app designed for iOS and Android that allows you to seamlessly view and manage your Kubernetes clusters. It provides a user-friendly interface to monitor cluster resources, deploy applications, and access vital information securely.</p>
                          </div>
                       </div>
                   </div>
                   <div class="accordion-item">
                       <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-02">
-                         <h3>Clean Code</h3>
+                         <h3>How can I access my Kubernetes cluster using KubeDash?</h3>
                       </div>
                       <div class="collapse" id="collapse-02" data-parent="#accordion">
                          <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <p> KubeDash supports seamless integration with your existing Kubernetes cluster. You can securely connect to your cluster by using your Kubernetes configuration file (kubeconfig). No direct access to your cluster is required, ensuring the security of your cluster while giving you full control from your mobile device.</p>
                          </div>
                       </div>
                   </div>
                   <div class="accordion-item">
                       <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-03">
-                         <h3>flat, modern and clean design</h3>
+                         <h3>What platforms is KubeDash available on?</h3>
                       </div>
                       <div class="collapse" id="collapse-03" data-parent="#accordion">
                          <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <p>Currently, KubeDash is available for both iOS and Android platforms.</p>
                          </div>
                       </div>
                   </div>
                   <div class="accordion-item">
                       <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-04">
-                         <h3>Custom Font Support</h3>
+                         <h3> Can I manage multiple clusters using KubeDash?</h3>
                       </div>
                       <div class="collapse" id="collapse-04" data-parent="#accordion">
                          <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <p>KubeDash allows you to focus on a single Kubernetes cluster at a time. You can securely configure and switch between different clusters using your kubeconfig file, ensuring a focused and secure management experience.</p>
                          </div>
                       </div>
                   </div>
@@ -440,7 +452,7 @@
          <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="section-title">
-                    <h2>get in <span>touch</span></h2>
+                    <h2>Join our <span>community</span></h2>
                 </div>
             </div>
          </div>
@@ -456,7 +468,7 @@
                   <div class="contact-info-item">
                      <i class="fas fa-envelope"></i>
                      <h4>Write to us at</h4>
-                     <p>info@gmail.com</p>
+                     <p>ahmedk.madani@outlook.com</p>
                   </div>
                   <div class="contact-info-item">
                      <i class="fas fa-phone"></i>
@@ -467,48 +479,54 @@
             </div>
             <div class="col-lg-8 col-md-7">
                <div class="contact-form">
-                  <form>
+                  <form method="POST" action="/">
                      <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <div class="form-group">
-                               <input type="text" placeholder="Your Name" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                               <input type="text" placeholder="Your Email" class="form-control">
+                               <input type="text" name="first_name" placeholder="Your Name" required class="form-control">
                             </div>
                         </div>
                      </div>
                      <div class="row">
                         <div class="col-lg-12">
-                           <div class="form-group">
-                              <input type="text" placeholder="Your Phone" class="form-control">
-                           </div>
+                            <div class="form-group">
+                               <input type="text" name="email" required placeholder="Email" class="form-control">
+                            </div>
                         </div>
                      </div>
-                     <div class="row">
+                    <div class="row">
                         <div class="col-lg-12">
-                           <div class="form-group">
-                              <input type="text" placeholder="Subject" class="form-control">
-                           </div>
+                            <div class="form-group">
+                                <select name="occupation" class="form-control">
+                                 <option value="" selected disabled>Select an Occupation</option>
+                                 <option value="student">Student</option>
+                                    <option value="developer">Developer</option>
+                                    <option value="operations">IT Operations</option>
+                                    <option value="devops">DevOps</option>
+                                </select>
+                            </div>
                         </div>
+                    </div>
+                    <div class="row">
+                     <div class="col-lg-12">
+                         <div class="form-group">
+                             <select name="phone_os" class="form-control">
+                              <option value="" selected disabled>Select your Phone OS</option>
+                              <option value="android">Android</option>
+                                 <option value="ios">IOS</option>
+                             </select>
+                         </div>
                      </div>
+                 </div>
                      <div class="row">
                         <div class="col-lg-12">
-                           <div class="form-group">Kubernetes
-                              <textarea placeholder="Your Message" class="form-control"></textarea>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-lg-12">
-                           <button type="submit" class="btn btn-2">Send Message</button>
+                           <button type="submit" class="btn btn-2">Join as a Beta User</button>
                         </div>
                      </div>
                   </form>
                </div>
             </div>
+            
          </div>
      </div>
   </section>
@@ -599,3 +617,13 @@
 <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZD7HKGL8LL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZD7HKGL8LL');
+</script>
